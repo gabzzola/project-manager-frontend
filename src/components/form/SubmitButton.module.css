@@ -1,4 +1,4 @@
-button {
+.button {
   width: fit-content;
   padding: 0.5rem 1rem;
   color: #FFF;
@@ -6,6 +6,6 @@ button {
   border-radius: 10px;
 }
 
-button:hover {
+.button:hover {
   background-color: #E63950;
 }

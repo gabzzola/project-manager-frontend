@@ -1,9 +1,9 @@
-import './Input.module.css';
+import styles from './Input.module.css';
 
 function Input({ type, step, text, name, value, placeholder, onChange }) {
   return (
     <>
-      <label htmlFor={name}>
+      <label htmlFor={name} className={styles.label}>
         { text }:
       </label>
       
@@ -14,7 +14,8 @@ function Input({ type, step, text, name, value, placeholder, onChange }) {
         name={name}
         value={value}
         placeholder={placeholder}
-        onChange={onChange}        
+        onChange={onChange}
+        className={styles.input}     
       />
     </>
   );
