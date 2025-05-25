@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import styles from './Navbar.module.css';
 
 function Navbar() {
@@ -14,9 +14,15 @@ function Navbar() {
         {
           navigation.map((item) => (
             <li key={item.to}>
-              <Link to={item.to} className={styles.item}>
+              <NavLink
+                to={item.to}
+                end={item.to === "/"}
+                className={({ isActive }) => 
+                  isActive ? `${styles.item} ${styles.active}` : styles.item
+                }
+              >
                 { item.text }
-              </Link>
+              </NavLink>
             </li>
           ))
         }

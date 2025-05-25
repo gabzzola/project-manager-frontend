@@ -6,9 +6,10 @@
 .item {
   position: relative;
   color: #FF637B;
-  font-size: 20px;
-  font-weight: 600;
+  font-size: 1.25rem;
+  font-weight: bold;
   padding: 5px;
+  transition: color 0.3s ease;
 }
 
 .item::after {
@@ -26,6 +27,11 @@
   color: #E63950;
 }
 
-.item:hover::after {
+.item:hover::after,
+.active::after {
   width: 100%;
+}
+
+.active {
+  color: #E63950;
 }
