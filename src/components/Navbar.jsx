@@ -1,4 +1,6 @@
+import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
+import { FaBars } from 'react-icons/fa';
 import styles from './Navbar.module.css';
 
 function Navbar() {
@@ -8,9 +10,16 @@ function Navbar() {
     { to: "/contact", text: "Contato" },
   ];
 
+  const [menuOpen, setMenuOpen] = useState(false);
+  const toggleMenu = () => setMenuOpen(prev => !prev);
+
   return (
     <nav>
-      <ul className={styles.list}>
+      <button className={styles.menuToggle} onClick={toggleMenu}>
+        <FaBars size="24px" />
+      </button>
+
+      <ul className={`${styles.list} ${menuOpen ? styles.open : ''}`}>
         {
           navigation.map((item) => (
             <li key={item.to}>
@@ -20,6 +29,7 @@ function Navbar() {
                 className={({ isActive }) => 
                   isActive ? `${styles.item} ${styles.active}` : styles.item
                 }
+                onClick={toggleMenu}
               >
                 { item.text }
               </NavLink>
