@@ -2,23 +2,51 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
+  padding: 20px;
 }
 
-.mainContainer span {
+.introContainer {
+  text-align: center;
+}
+
+.introContainer h1 {
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+
+.introContainer span {
   color: #E63950;
+  font-size: 30px;
 }
 
-.mainContainer p {
+.introContainer p {
   color: #7C8388;
+  font-size: 15px;
+  margin-bottom: 20px;
 }
 
 .mainContainer img {
-  height: 40vh;
+  width: 100%;
+  height: auto;
+  max-width: 600px;
   margin: 20px 0 40px;
   transition: transform 0.2s ease-in-out;
 }
 
 .mainContainer img:hover {
   transform: scale(1.05);
+}
+
+@media (min-width: 768px) {
+  .introContainer h1 {
+    font-size: 35px;
+  }
+
+  .introContainer span {
+    font-size: 40px;
+  }
+
+  .introContainer p {
+    font-size: 20px;    
+  }
 }

@@ -1,7 +1,7 @@
 .mainContainer {
   width: 80%;
   max-width: 500px;
-  padding: 50px;
+  padding: 30px;
 
   display: flex;
   flex-direction: column;
@@ -13,9 +13,7 @@
 }
 
 .introContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  text-align: center;
 }
 
 .introContainer h1 {

@@ -5,12 +5,14 @@ import styles from './Home.module.css';
 function Home() {
   return (
     <main className={styles.mainContainer}>
-      <h1>
-        Bem-vindo ao <span>Gerenciador de Projetos</span>
-      </h1>
+      <div className={styles.introContainer}>
+        <h1>
+          Bem-vindo ao <span>Gerenciador de Projetos</span>
+        </h1>
 
-      <p>Comece a gerenciar seus projetos agora mesmo!</p>
-
+        <p>Comece a gerenciar seus projetos agora mesmo!</p>
+      </div>
+      
       <LinkButton 
         to="/newproject"
         text="CRIAR NOVO PROJETO"
