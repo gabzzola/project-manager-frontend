@@ -36,22 +36,24 @@ function ProjectForm() {
   return (
     <form onSubmit={handleSubmit} autoComplete="off">
       <Input 
-        type="text"
         text="Nome do Projeto"
         name="name"
-        placeholder="Insira o nome do projeto"
-        value={formData.name}
+        type="text"
+        value={formData.name}        
         onChange={handleChange}        
+        placeholder="Insira o nome do projeto"
+        required={true}        
       />
 
       <Input 
-        type="number"
-        step="0.01"
         text="Orçamento do Projeto"
         name="budget"
-        placeholder="Insira o orçamento para o projeto"
+        type="number"
+        step="0.01"
         value={formData.budget}
         onChange={handleChange}
+        placeholder="Insira o orçamento para o projeto"
+        required={true}        
       />
 
       <SubmitButton text="Criar Projeto" />
