@@ -26,9 +26,11 @@
 }
 
 .mainContainer img {
-  width: 100%;
+  max-width: 100%;
+  max-height: 50vh;
+  width: auto;
   height: auto;
-  max-width: 600px;
+  object-fit: contain;
   margin: 20px 0 40px;
   transition: transform 0.2s ease-in-out;
 }
@@ -48,10 +50,5 @@
 
   .introContainer p {
     font-size: 20px;    
-  }
-
-  .mainContainer img {
-    width: auto;
-    height: 50vh;
   }
 }
