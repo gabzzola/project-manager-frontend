@@ -8,11 +8,11 @@
   padding: 15px;
   margin-bottom: 1.5rem;
   border-radius: 8px;
-  border: 2px solid #000;
-  transition: border-color 0.8s ease;
+  border: 2px solid #D7D7D7;
+  transition: border-color 0.3s ease;
 }
 
 .input:focus {
   outline: none;
-  border-color: #FF637B;
+  border-color: #000;
 }

@@ -4,8 +4,15 @@
   color: #FFF;
   background-color: #FF637B;    
   border-radius: 10px;
+  border: 2px solid transparent;
+  transition: border-color 0.5s ease;
 }
 
 .button:hover {
   background-color: #E63950;
+}
+
+.button:focus {
+  outline: none;
+  border-color: #B82039;
 }
