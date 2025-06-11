@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import api from '../services/api';
+import { createProject } from '../services/projectService';
 
 import ProjectForm from '../components/project/ProjectForm';
 import styles from './NewProject.module.css';
@@ -15,8 +15,8 @@ function NewProject() {
     e.preventDefault();
 
     try {
-      const response = await api.post("/api/projects", formData);
-      console.log('Sucesso ao criar o projeto: ', response.data);
+      const project = await createProject(formData);
+      console.log('Sucesso ao criar o projeto: ', project);
 
       setFormData({ name: '', budget: '' });
 
