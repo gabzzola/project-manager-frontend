@@ -1,0 +1,9 @@
+.menuToggle {
+  color: #7C8388;
+}
+
+@media (min-width: 1024px) {
+  .menuToggle {
+    display: none;
+  }
+}
