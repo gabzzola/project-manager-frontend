@@ -1,0 +1,37 @@
+.header {  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logoContainer img {
+  height: 6vh;
+}
+
+.logoContainer h1 {
+  width: 150px;
+  font-size: 1.4rem;
+  color: #7C8388;
+}
+
+.logoContainer h1:hover {
+  color: #92999E;
+}
+
+@media (min-width: 768px) {
+  .logoContainer img {
+    height: 8vh;
+  }
+
+  .logoContainer h1 {    
+    width: fit-content;
+    font-size: 35px;
+  }
+}
