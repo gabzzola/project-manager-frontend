@@ -1,6 +1,8 @@
+import AppRoutes from './routes/AppRoutes';
+
 function App() {
-  return (  
-    <h1>Gerenciador de Projetos</h1>    
+  return (
+    <AppRoutes />
   );
 }
 
