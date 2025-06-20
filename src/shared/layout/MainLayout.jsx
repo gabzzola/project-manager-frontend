@@ -1,10 +1,11 @@
-import styles from '../styles/SharedStyles.module.css';
+import { Outlet } from 'react-router-dom';
+import sharedStyles from '../styles/SharedStyles.module.css';
 
-function MainLayout({ children }) {
+function MainLayout() {
   return (
-    <main className={styles.container}>
-      {children}
-    </main>
+    <main className={sharedStyles.container}>
+      <Outlet />
+    </main>     
   );
 }
 
