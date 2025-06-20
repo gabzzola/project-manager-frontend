@@ -1,1 +1,3 @@
-export const appRoutes = [];
+export const routesWithLayout = [];
+
+export const routesWithoutLayout = [];
