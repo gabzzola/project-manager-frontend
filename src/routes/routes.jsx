@@ -1,4 +1,4 @@
-import Home from "@/features/home/Home";
+import Home from "@/features/home";
 
 export const routesWithLayout = [
   { path: '/', element: <Home /> }

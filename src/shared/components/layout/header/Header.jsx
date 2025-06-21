@@ -3,7 +3,7 @@ import Navbar from './components/Navbar';
 
 import logo from '/favicon.ico';
 import styles from './Header.module.css';
-import sharedStyles from '../styles/SharedStyles.module.css';
+import sharedStyles from '@/shared/styles/SharedStyles.module.css';
 
 function Header() {
   return (
