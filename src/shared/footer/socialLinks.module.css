@@ -1,0 +1,25 @@
+.email {
+  color: #FF6B6B;
+}
+
+.github {
+  color: white;
+}
+
+.linkedin {
+  color: #4D9DE0;
+}
+
+.email,
+.github,
+.linkedin {
+  font-size: 25px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.email:hover,
+.github:hover,
+.linkedin:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
