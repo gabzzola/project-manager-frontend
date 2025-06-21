@@ -1,0 +1,30 @@
+.btn {
+  color: #FFF;
+  font-size: 15px;
+  font-weight: 600;
+  background-color: #3B8E64;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(59, 142, 100, 0.9);
+}
+
+.pulsing {
+  animation: btn-pulse 2s ease-in-out infinite;
+}
+
+@keyframes btn-pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+@media (min-width: 768px) {
+  .btn {
+    font-size: 18px;
+  }
+}
