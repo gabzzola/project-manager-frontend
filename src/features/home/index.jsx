@@ -1,5 +1,5 @@
-import PageTitle from '@/shared/components/PageTitle';
-import LinkButton from '@/shared/components/button/LinkButton';
+import PageTitle from '@/shared/components/utils/PageTitle';
+import LinkButton from '@/shared/components/ui/LinkButton';
 import logo from './img/home.png';
 import styles from './Home.module.css';
 

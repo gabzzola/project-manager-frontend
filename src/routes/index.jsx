@@ -1,6 +1,6 @@
 import { Routes, Route } from 'react-router-dom';
-import { routesWithLayout, routesWithoutLayout } from './routesConfig';
-import MainLayout from '../shared/layout/MainLayout';
+import { routesWithLayout, routesWithoutLayout } from './routes';
+import MainLayout from '../shared/components/layout/MainLayout';
 
 function AppRoutes() {
   return (

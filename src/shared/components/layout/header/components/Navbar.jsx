@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 
-import { navigationItems } from '../const/navigation';
+import { navigationLinks } from '../navigationLinks';
 import MenuToggle from './MenuToggle';
 import styles from './Navbar.module.css';
 
@@ -15,7 +15,7 @@ function Navbar() {
 
       <ul className={`${styles.list} ${menuOpen ? styles.open : ''}`}>
         {
-          navigationItems.map(({ to, text}) => (
+          navigationLinks.map(({ to, text}) => (
             <li key={to}>
               <NavLink 
                 to={to}
