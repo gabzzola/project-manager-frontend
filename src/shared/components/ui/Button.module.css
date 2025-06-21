@@ -1,0 +1,28 @@
+.btn {
+  width: fit-content;
+  padding: 0.5rem 1rem;
+  color: #FFF;    
+  border-radius: 10px;
+  border: 2px solid transparent;
+  transition: border-color 0.5s ease;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn.green {
+  background-color: #059669;
+}
+
+.btn.green:hover {
+  background-color: #047857;
+}
+
+.btn.red {
+  background-color: #DC2626;
+}
+
+.btn.red:hover {
+  background-color: #B91C1C;
+}
