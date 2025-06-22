@@ -9,7 +9,7 @@ function InputBudget({ value, onChange }) {
       step="0.01"
       value={value}
       onChange={onChange}
-      placeholder="Insira o orçamento para o projeto"
+      placeholder="Insira o orçamento do projeto"
       required={true}        
     />
   );
