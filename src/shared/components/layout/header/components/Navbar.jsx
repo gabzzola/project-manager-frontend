@@ -1,13 +1,20 @@
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
+import { useIsMobile } from '@/shared/hooks/useIsMobile';
 
 import { navigationLinks } from '../navigationLinks';
 import MenuToggle from './MenuToggle';
 import styles from './Navbar.module.css';
 
 function Navbar() {
+  const isMobile = useIsMobile();
   const [menuOpen, setMenuOpen] = useState(false);
-  const toggleMenu = () => setMenuOpen(prev => !prev);
+
+  const toggleMenu = () => {
+    if (isMobile) {
+      setMenuOpen(prev => !prev);
+    }
+  };
 
   return (
     <nav>
@@ -15,9 +22,9 @@ function Navbar() {
 
       <ul className={`${styles.list} ${menuOpen ? styles.open : ''}`}>
         {
-          navigationLinks.map(({ to, text}) => (
+          navigationLinks.map(({ to, text }) => (
             <li key={to}>
-              <NavLink 
+              <NavLink
                 to={to}
                 end={to === "/"}
                 onClick={toggleMenu}
