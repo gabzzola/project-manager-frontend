@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { useIsMobile } from '@/shared/hooks/useIsMobile';
 
@@ -15,6 +15,12 @@ function Navbar() {
       setMenuOpen(prev => !prev);
     }
   };
+
+  useEffect(() => {
+    if (!isMobile) {
+      setMenuOpen(false);
+    }
+  }, [isMobile]);
 
   return (
     <nav>
