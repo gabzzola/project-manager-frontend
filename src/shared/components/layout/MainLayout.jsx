@@ -6,7 +6,7 @@ import sharedStyles from '@/shared/styles/SharedStyles.module.css';
 
 function MainLayout() {
   return (
-    <div className={styles.layout}>
+    <>
       <Header />
 
       <main className={`${styles.main} ${sharedStyles.container}`}>
@@ -14,7 +14,7 @@ function MainLayout() {
       </main>
 
       <Footer />
-    </div>
+    </>
   );
 }
 
