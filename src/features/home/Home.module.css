@@ -38,6 +38,15 @@
 }
 
 @media (min-width: 768px) {
+  .mainContainer {
+    flex-direction: row;
+    gap: 30px
+  }
+
+  .introContainer {
+    width: 400px;
+  }
+
   .introContainer h1 {
     font-size: 30px;
   }
@@ -48,5 +57,6 @@
 
   .introContainer p {
     font-size: 20px;
+    margin-bottom: 30px;
   }
 }

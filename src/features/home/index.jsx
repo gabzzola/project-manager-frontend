@@ -15,13 +15,13 @@ function Home() {
           </h1>
 
           <p>Comece a gerenciar seus projetos agora mesmo!</p>
-        </div>
 
-        <LinkButton
-          to="/newproject"
-          text="CRIAR NOVO PROJETO"
-          variant="pulsing"
-        />
+          <LinkButton
+            to="/newproject"
+            text="CRIAR NOVO PROJETO"
+            variant="pulsing"
+          />
+        </div>
 
         <img
           src={logo}
