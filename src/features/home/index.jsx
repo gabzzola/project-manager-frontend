@@ -15,18 +15,21 @@ function Home() {
           </h1>
 
           <p>Comece a gerenciar seus projetos agora mesmo!</p>
+
+          <LinkButton
+            to="/newproject"
+            text="CRIAR NOVO PROJETO"
+            variant="pulsing"
+          />
         </div>
 
-        <LinkButton
-          to="/newproject"
-          text="CRIAR NOVO PROJETO"
-          variant="pulsing"
-        />
+        <div className={styles.imageContainer}>
+          <img
+            src={logo}
+            alt="Gerencie seus projetos!"
+          />
+        </div>
 
-        <img
-          src={logo}
-          alt="Gerencie seus projetos!"
-        />
       </div>
     </>
   );
