@@ -2,7 +2,7 @@ import styles from './FormActions.module.css';
 
 function FormActions({ children }) {
   return (
-    <div className={styles.actionsContainer}>
+    <div className={styles.formActions}>
       {children}
     </div>
   );

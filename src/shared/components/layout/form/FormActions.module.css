@@ -1,5 +1,6 @@
-.actionsContainer {
+.formActions {
   display: flex;
   flex-direction: row;
   justify-content: end;
+  gap: 20px;
 }
