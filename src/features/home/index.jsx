@@ -29,7 +29,6 @@ function Home() {
             alt="Gerencie seus projetos!"
           />
         </div>
-
       </div>
     </>
   );
