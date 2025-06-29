@@ -24,16 +24,15 @@
   margin-bottom: 20px;
 }
 
-.mainContainer img {
-  max-width: 100%;
-  max-height: 50vh;
-  width: auto;
+.imageContainer img {
+  max-width: 600px;
+  width: 100%;
   height: auto;
   margin-top: 20px;
   transition: transform 0.2s ease-in-out;
 }
 
-.mainContainer img:hover {
+.imageContainer img:hover {
   transform: scale(1.02);
 }
 
@@ -48,5 +47,17 @@
 
   .introContainer p {
     font-size: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .mainContainer {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-items: center;    
+  }
+
+  .imageContainer img {  
+    margin-top: 0px;
   }
 }
