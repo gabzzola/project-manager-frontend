@@ -1,3 +1,19 @@
+/* Variables */
+:root {
+  --dark-gray: #7C8388;
+  --light-gray: #92999E;
+  --dark-red: #E63950;
+  --light-red: #FF637B;
+}
+
+/* Main Layout */
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Reset and Base Styles */
 * {
   margin: 0;
   padding: 0;
@@ -34,4 +50,13 @@ button {
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
+}
+
+/* Utility Classes */
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
