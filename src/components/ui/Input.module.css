@@ -1,0 +1,22 @@
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.label {
+  color: var(--dark-gray);
+  font-weight: bold;  
+}
+
+.input {
+  padding: 15px;  
+  border-radius: 8px;
+  border: 2px solid #D7D7D7;
+  transition: border-color 0.3s ease;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #000;
+}

@@ -47,11 +47,6 @@ button {
   background: none;
 }
 
-input[type="number"]::-webkit-outer-spin-button,
-input[type="number"]::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-}
-
 /* Utility Classes */
 .container {
   max-width: 1200px;

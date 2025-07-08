@@ -1,0 +1,10 @@
+@media (max-width: 480px) {
+  .Toastify__toast-container {
+    width: 100vw;
+    padding: 1rem;
+  }
+
+  .Toastify__toast {
+    margin-bottom: 1rem;
+  }
+}
