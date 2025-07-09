@@ -1,12 +1,14 @@
 import { useEffect, useRef } from 'react';
 import { useForm } from '@/hooks/useForm';
+
 import FormContent from '@/components/form/FormContent';
 import FormActions from '@/components/form/FormActions';
 import Input from '@/components/ui/Input';
 import InputCurrency from '@/components/ui/InputCurrency';
+import CancelButton from '@/components/ui/CancelButton';
 import SubmitButton from '@/components/ui/SubmitButton';
 
-function ProjectForm({ initialValues, textSubmit, onSubmit }) {
+function ProjectForm({ initialValues, onCancel, textSubmit, onSubmit, className, children }) {
   const inputRef = useRef(null);
   const { values, handleChange } = useForm(initialValues);
 
@@ -21,7 +23,7 @@ function ProjectForm({ initialValues, textSubmit, onSubmit }) {
   };
 
   return (
-    <FormContent onSubmit={handleSubmit}>
+    <FormContent onSubmit={handleSubmit} className={className}>
       <Input
         label="Nome do Projeto"
         name="name"
@@ -41,7 +43,10 @@ function ProjectForm({ initialValues, textSubmit, onSubmit }) {
         required
       />
 
+      {children}
+
       <FormActions>
+        {onCancel && <CancelButton to={onCancel} />}        
         <SubmitButton text={textSubmit} />
       </FormActions>
     </FormContent>
