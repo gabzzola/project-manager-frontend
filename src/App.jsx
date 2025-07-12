@@ -1,8 +1,6 @@
 import { Outlet, useNavigation } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import Loading from './components/ui/Loading';
-import 'react-toastify/dist/ReactToastify.css';
-import './styles/toast-custom.css';
 
 function App() {
   const navigation = useNavigation();
