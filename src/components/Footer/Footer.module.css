@@ -1,0 +1,12 @@
+.footer {  
+  display: flex;  
+  flex-direction: column;
+  align-items: center;  
+  gap: 2rem;
+  padding: 2rem;
+  background-color: #BBC0C4;
+}
+
+.footer h4 {
+  color: var(--dark-gray);
+}
