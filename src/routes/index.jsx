@@ -1,13 +1,18 @@
 import { createBrowserRouter } from 'react-router-dom';
-import { routes } from './routes';
+import { routesWithLayout, routesWithoutLayout } from './routes';
 import App from '../App';
+import MainLayout from '../layouts/MainLayout';
 
 export const router = createBrowserRouter(
   [
     {
       element: <App />,
       children: [
-        ...routes
+        {
+          element: <MainLayout />,
+          children: routesWithLayout
+        },
+        ...routesWithoutLayout
       ]
     }
   ]
