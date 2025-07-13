@@ -1,0 +1,28 @@
+.item {
+  position: relative;
+  padding: 0.8rem;    
+  font-weight: bold;
+  color: var(--light-red);
+  transition: color 0.3s ease;
+}
+
+.item::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;  
+  width: 0%;
+  height: 2px;
+  background-color: var(--dark-red);
+  transition: width 0.3s ease;
+}
+
+.item:hover,
+.active {
+  color: var(--dark-red);
+}
+
+.item:hover::after,
+.item.active::after {
+  width: 100%;
+}

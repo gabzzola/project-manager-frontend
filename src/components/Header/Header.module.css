@@ -1,0 +1,39 @@
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 2.4rem;
+  padding-bottom: 2.4rem;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.logoContainer img {
+  height: 5.5rem;
+}
+
+.logoContainer h1 {
+  width: 150px;
+  font-size: 2.4rem;
+  color: var(--dark-gray);
+}
+
+.logoContainer h1:hover {
+  color: var(--light-gray);
+}
+
+@media (min-width: 550px) {
+  .logoContainer img {
+    height: 6.4rem;
+  }
+
+  .logoContainer h1 {
+    width: fit-content;
+    font-size: 3.2rem;
+  }
+}
