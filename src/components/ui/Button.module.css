@@ -2,14 +2,23 @@
   display: inline-block;
   padding: 0.8rem 1.6rem;
   color: #FFF;
-  font-weight: 600;
+  font-weight: 500;
   border-radius: 10px;
 }
 
 .pulsing {
+  font-weight: 600;
   background-color: #3B8E64;
   box-shadow: 0 0 20px rgba(59, 142, 100, 0.9);
   animation: btn-pulse 2s ease-in-out infinite;
+}
+
+.btn.green {
+  background-color: #059669;
+}
+
+.btn.green:hover {
+  background-color: #047857;
 }
 
 @keyframes btn-pulse {
@@ -23,7 +32,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 425px) {
   .btn {
     font-size: 1.9rem;
   }

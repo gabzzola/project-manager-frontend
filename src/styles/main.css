@@ -1,3 +1,15 @@
+/* Variables & Settings*/
 @import './_variables.css';
+
+/* Base Styles & Resets */
 @import './_base.css';
+
+/* Main Layout */
 @import './_layout.css';
+
+/* Utility Classes */
+@import './_utilities.css';
+
+/* Vendors Styles */
+@import 'react-toastify/dist/ReactToastify.css';
+@import './vendors/_toastify.css';
