@@ -4,3 +4,10 @@
   flex-direction: column;
   gap: 2.5rem;
 }
+
+@media (min-width: 768px) {
+  .gridTwoColumns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}

@@ -21,6 +21,14 @@
   background-color: #047857;
 }
 
+.btn.red {
+  background-color: #DC2626;
+}
+
+.btn.red:hover {
+  background-color: #B91C1C;
+}
+
 @keyframes btn-pulse {
   0%,
   100% {
