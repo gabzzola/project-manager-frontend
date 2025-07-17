@@ -2,9 +2,12 @@ import { Link } from 'react-router-dom';
 import clsx from 'clsx';
 import styles from './Button.module.css';
 
-function Button({ to, type = 'button', variant = '', children, ...rest }) {
+function Button({ to, type = 'button', variants = [], children, ...rest }) {
 
-  const className = clsx(styles.btn, styles[variant]);
+  const className = clsx(
+    styles.btn,
+    variants.map(variant => styles[variant])
+  );
 
   if (to) {
     return (

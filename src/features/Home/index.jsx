@@ -12,7 +12,7 @@ function Home() {
 
         <p>Comece a gerenciar seus projetos agora mesmo!</p>
 
-        <Button to="/projects/new" variant="pulsing">
+        <Button to="/projects/new" variants={["cta", "pulsing"]}>
           CRIAR NOVO PROJETO
         </Button>
       </div>

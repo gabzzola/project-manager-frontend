@@ -1,8 +1,8 @@
 import Button from './Button';
 
-function CancelButton({ to }) {
+function CancelButton({ to, ...rest }) {
   return (
-    <Button to={to} variant="red">
+    <Button to={to} variants={["red"]} {...rest} >
       Cancelar
     </Button>
   );

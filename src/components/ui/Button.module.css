@@ -1,34 +1,43 @@
+/* Base Style */
 .btn {
   display: inline-block;
   padding: 0.8rem 1.6rem;
   color: #FFF;
   font-weight: 500;
   border-radius: 10px;
+  transition: background-color 0.3s ease;
 }
 
-.pulsing {
-  font-weight: 600;
-  background-color: #3B8E64;
-  box-shadow: 0 0 20px rgba(59, 142, 100, 0.9);
-  animation: btn-pulse 2s ease-in-out infinite;
-}
-
-.btn.green {
+/* Color Variants */
+.green {
   background-color: #059669;
 }
 
-.btn.green:hover {
+.green:hover {
   background-color: #047857;
 }
 
-.btn.red {
+.red {
   background-color: #DC2626;
 }
 
-.btn.red:hover {
+.red:hover {
   background-color: #B91C1C;
 }
 
+/* CTA Highlight Variant */
+.cta {
+  font-weight: 600;
+  background-color: #3B8E64;
+  box-shadow: 0 0 20px rgba(59, 142, 100, 0.7);
+}
+
+/* Animation Variant */
+.pulsing {
+  animation: btn-pulse 2s ease-in-out infinite;
+}
+
+/* Animation (keyframes) */
 @keyframes btn-pulse {
   0%,
   100% {
