@@ -1,0 +1,29 @@
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.label {
+  color: var(--dark-gray);
+  font-weight: bold;
+}
+
+.input {
+  padding: 1.5rem;
+  font-size: 1.4rem;
+  border-radius: 0.8rem;
+  border: 2px solid #D7D7D7;
+  transition: border-color 0.3s ease;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #000;
+}
+
+@media (min-width: 425px) {
+  .input {
+    font-size: 1.6rem;    
+  }
+}

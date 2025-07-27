@@ -1,0 +1,73 @@
+.modalBackdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 9999;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modalContent {
+  width: 90%;
+  max-width: 500px;
+  padding: 2.4rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.2);
+}
+
+.modalHeader h2 {
+  font-size: 2rem;
+  color: var(--dark-red);
+}
+
+.modalBody p {
+  font-size: 1.6rem;
+  overflow-wrap: break-word;
+  color: var(--dark-gray);
+  margin-bottom: 2rem;
+}
+
+.modalActions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+}
+
+.modalActions button,
+.modalActions a {
+  padding: 0.8rem 1.6rem;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.2s ease;
+}
+
+.cancelButton {
+  color: #333;
+  background-color: #E7E7E7;
+}
+
+.cancelButton:hover {
+  background-color: #D8D8D8;
+}
+
+.deleteButton {
+  color: #FFF;
+  background-color: var(--dark-red);
+}
+
+.deleteButton:hover {
+  background-color: #A93232;
+}

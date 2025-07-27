@@ -1,4 +1,4 @@
-import Button from '@/components/ui/Button';
+import { CreateButton } from '@/components/ui/button';
 import logo from './img/home.png';
 import styles from './Home.module.css';
 
@@ -12,9 +12,9 @@ function Home() {
 
         <p>Comece a gerenciar seus projetos agora mesmo!</p>
 
-        <Button to="/projects/new" variant="pulsing">
+        <CreateButton to="/projects/new" hasData={false}>
           CRIAR NOVO PROJETO
-        </Button>
+        </CreateButton>
       </div>
 
       <div className={styles.logoContainer}>
