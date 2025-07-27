@@ -1,0 +1,15 @@
+.actions {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: end;
+  gap: 2rem;
+  margin-top: auto;
+}
+
+.formActions {
+  grid-column: 2;
+}
+
+.cardActions {
+  padding-top: 2rem;
+}

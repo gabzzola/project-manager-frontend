@@ -1,7 +1,0 @@
-.formActions {
-  display: grid;
-  grid-auto-flow: column;
-  justify-content: end;
-  grid-column: 2;
-  gap: 2rem;
-}

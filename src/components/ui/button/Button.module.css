@@ -1,0 +1,94 @@
+/* Base Style */
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.6rem;
+
+  color: #FFF;
+  font-weight: 500;
+  font-size: 1.4rem;
+
+  border-radius: 6px;
+  border: 2px solid transparent;
+  background-color: transparent;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Actions Styles */
+.submit {
+  border-radius: 8px;
+  background-color: #059669;
+}
+
+.submit:hover {
+  background-color: #047857;
+}
+
+.cancel {
+  border-radius: 8px;
+  background-color: #DC2626;
+}
+
+.cancel:hover {
+  background-color: #B91C1C;
+}
+
+.edit {
+  color: #555;
+  font-weight: 600;
+  border-color: #ddd;
+}
+
+.edit:hover {
+  background-color: #f0f0f0;
+  border-color: #ccc;
+  transform: translateY(-2px);
+}
+
+.delete {
+  color: var(--dark-red);
+  font-weight: 600;
+  border: none;
+}
+
+.delete:hover {
+  color: #FFF;
+  background-color: var(--dark-red);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(220, 53, 69, 0.3);
+}
+
+/* CTA Highlight Variant */
+.cta {
+  font-weight: 600;
+  font-size: 1.6rem;
+  border-radius: 10px;
+  background-color: #3B8E64;
+  box-shadow: 0 0 20px rgba(59, 142, 100, 0.7);
+}
+
+/* Animation Variant */
+.pulsing {
+  animation: btn-pulse 2s ease-in-out infinite;
+}
+
+/* Animation (keyframes) */
+@keyframes btn-pulse {
+
+  from,
+  to {
+    transform: scale(1) translateY(0);
+  }
+
+  50% {
+    transform: scale(1.05) translateY(-2px);
+  }
+}
+
+@media (min-width: 425px) {
+
+  .cta,
+  .submit,
+  .cancel {
+    font-size: 1.8rem;
+  }
+}

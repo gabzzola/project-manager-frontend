@@ -4,11 +4,9 @@ import clsx from 'clsx';
 
 import { useForm } from '@/hooks/useForm';
 import { useNavigationStatus } from '@/hooks/useNavigationStatus';
-import Input from '@/components/ui/Input';
-import InputCurrency from '@/components/ui/InputCurrency';
-import FormActions from '@/components/form/FormActions';
-import SubmitButton from '@/components/ui/SubmitButton';
-import CancelButton from '@/components/ui/CancelButton';
+import { Input, InputCurrency } from '@/components/ui/form';
+import { CancelButton, SubmitButton } from '@/components/ui/button';
+import FormActions from '@/components/ui/Actions';
 
 function ProjectForm({ initialValues, onCancel, className = '', children }) {
   const { values, handleChange } = useForm(initialValues);
@@ -33,6 +31,7 @@ function ProjectForm({ initialValues, onCancel, className = '', children }) {
         required
         ref={inputRef}
       />
+
       <InputCurrency
         label="Orçamento do Projeto"
         name="budget"
@@ -44,7 +43,7 @@ function ProjectForm({ initialValues, onCancel, className = '', children }) {
 
       {children}
 
-      <FormActions>
+      <FormActions className="formActions">
         {onCancel && <CancelButton to={onCancel} disabled={isBusy} />}
 
         <SubmitButton disabled={isSubmitting}>

@@ -1,5 +1,4 @@
-import FormLayout from '@/components/form/FormLayout';
-import FormHeader from '@/components/form/FormHeader';
+import { FormLayout, FormHeader } from '@/components/ui/form';
 import ProjectForm from '../components/ProjectForm';
 
 function CreateProject() {
