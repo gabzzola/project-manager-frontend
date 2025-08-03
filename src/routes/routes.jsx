@@ -1,10 +1,12 @@
 import { Outlet } from 'react-router-dom';
 import Home from '../features/Home';
-import Projects from '../features/projects/pages/Projects';
-import CreateProject from '../features/projects/pages/CreateProject';
-import EditProject from '../features/projects/pages/EditProject';
+
+import { Projects, CreateProject, EditProject } from '../features/projects/pages';
 import { loaderAllProjects, loaderProjectById } from '../features/projects/projectLoaders';
 import { createProjectAction, updateProjectAction, deleteProjectAction } from '../features/projects/projectActions';
+
+import { CreateCategory } from '../features/categories/pages';
+import { createCategoryAction } from '../features/categories/categoryActions';
 
 export const routesWithLayout = [
   {
@@ -36,6 +38,18 @@ export const routesWithLayout = [
         loader: loaderProjectById,
         action: updateProjectAction,
         handle: { title: 'Editar Projeto', center: true }
+      }
+    ]
+  },
+  {
+    path: '/categories',
+    element: <Outlet />,
+    children: [
+      {
+        path: 'new',
+        element: <CreateCategory />,
+        action: createCategoryAction,
+        handle: { title: 'Criar Categoria', center: true }
       }
     ]
   }
