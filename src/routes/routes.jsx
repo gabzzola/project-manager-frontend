@@ -5,8 +5,9 @@ import { Projects, CreateProject, EditProject } from '../features/projects/pages
 import { loaderAllProjects, loaderProjectById } from '../features/projects/projectLoaders';
 import { createProjectAction, updateProjectAction, deleteProjectAction } from '../features/projects/projectActions';
 
-import { CreateCategory } from '../features/categories/pages';
-import { createCategoryAction } from '../features/categories/categoryActions';
+import { CreateCategory, EditCategory } from '../features/categories/pages';
+import { loaderCategoryById } from '../features/categories/categoryLoaders';
+import { createCategoryAction, updateCategoryAction } from '../features/categories/categoryActions';
 
 export const routesWithLayout = [
   {
@@ -50,6 +51,13 @@ export const routesWithLayout = [
         element: <CreateCategory />,
         action: createCategoryAction,
         handle: { title: 'Criar Categoria', center: true }
+      },
+      {
+        path: 'edit/:id',
+        element: <EditCategory />,
+        loader: loaderCategoryById,
+        action: updateCategoryAction,
+        handle: { title: 'Editar Categoria', center: true }
       }
     ]
   }
